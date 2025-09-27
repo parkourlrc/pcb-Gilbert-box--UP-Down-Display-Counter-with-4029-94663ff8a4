@@ -3205,6 +3205,16 @@
 		)
 		(uuid d7741d1e-d291-45ca-b2c3-67a104055201)
 	)
+	(text "Decoupling cap"
+		(exclude_from_sim no)
+		(at 80.772 56.896 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2a3f2c86-0e71-47e2-a9eb-2c5e3c557df5")
+	)
 	(text "Push Button and Switch\n"
 		(exclude_from_sim no)
 		(at 231.902 41.148 0)
@@ -3246,9 +3256,19 @@
 		)
 		(uuid "86758fdc-0cf6-42af-9c3b-4991ed692f35")
 	)
-	(text "Note for PCB:\n- Power symbol on input terminal\n- LED Indicator need adjustment to function\n\nNote for creator\n- R330 1/4W\n- R10k 1/4W \n- C100nF Ceramic"
+	(text "add protection diode"
 		(exclude_from_sim no)
-		(at 145.542 163.322 0)
+		(at 218.694 124.714 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8de2d6ef-fead-4bae-969c-5a553bac8940")
+	)
+	(text "Note for PCB:\n- Power symbol on input terminal\n- LED Indicator need adjustment to function"
+		(exclude_from_sim no)
+		(at 146.304 160.274 0)
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -3276,6 +3296,16 @@
 			)
 		)
 		(uuid "f1699e57-8373-444f-b038-e546a7a804f3")
+	)
+	(text "debounce pake RC"
+		(exclude_from_sim no)
+		(at 256.032 52.324 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f2915301-4da4-45f2-b0f3-04e320ad637c")
 	)
 	(text "Up/down counter using IC 4029 and 7-seg CA Display"
 		(exclude_from_sim no)
@@ -3382,6 +3412,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96f4afec-635e-4ef4-a0ac-45e694e23515")
+	)
+	(junction
+		(at 234.95 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99c2ae63-88bb-45d3-91a9-b33bd40235d0")
 	)
 	(junction
 		(at 114.3 163.83)
@@ -3522,6 +3558,16 @@
 			(type default)
 		)
 		(uuid "0afefc53-16de-42bf-b50b-815b7f73566a")
+	)
+	(wire
+		(pts
+			(xy 234.95 55.88) (xy 234.95 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14932985-4e86-4d69-a9fb-1c6e201ec811")
 	)
 	(wire
 		(pts
@@ -3892,6 +3938,26 @@
 			(type default)
 		)
 		(uuid "79700a7d-4a4d-4622-b74c-e8cb9c19ed78")
+	)
+	(wire
+		(pts
+			(xy 236.22 55.88) (xy 234.95 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79cf955a-3615-42e0-8ab5-aa7b55faafe5")
+	)
+	(wire
+		(pts
+			(xy 93.98 152.4) (xy 105.41 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79d794b1-f9b7-44d6-813c-9b08fc0199b8")
 	)
 	(wire
 		(pts
@@ -4445,7 +4511,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 57.15) (xy 232.41 57.15)
+			(xy 245.11 57.15) (xy 234.95 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4512,6 +4578,16 @@
 			(type default)
 		)
 		(uuid "e293eb99-e56f-467a-bd41-03f7bbe895ea")
+	)
+	(wire
+		(pts
+			(xy 234.95 57.15) (xy 232.41 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e342f48f-ae75-4eaf-b401-6348f1fdec5b")
 	)
 	(wire
 		(pts
@@ -4592,16 +4668,6 @@
 			(type default)
 		)
 		(uuid "f18026e3-4355-4414-8c20-97a0e1c4ab18")
-	)
-	(wire
-		(pts
-			(xy 93.98 152.4) (xy 105.41 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f21d7263-cc12-4780-b480-79ebe76432cc")
 	)
 	(wire
 		(pts
@@ -4754,7 +4820,7 @@
 		(uuid "422e7f59-dd5d-4cbe-9212-61afdb84730e")
 	)
 	(label "Count"
-		(at 234.95 57.15 0)
+		(at 236.22 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
