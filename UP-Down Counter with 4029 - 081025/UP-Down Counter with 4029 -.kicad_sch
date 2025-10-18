@@ -7,7 +7,7 @@
 	(title_block
 		(title "Up-Down Counter with 4029")
 		(date "2025-10-05")
-		(rev "Rev 1.1")
+		(rev "1.1")
 	)
 	(lib_symbols
 		(symbol "4xxx:40106"
@@ -4436,7 +4436,7 @@
 	)
 	(text "Note for PCB:\n- Power symbol on input terminal\n- LED Indicator need adjustment based on the function"
 		(exclude_from_sim no)
-		(at 179.07 176.276 0)
+		(at 178.308 171.196 0)
 		(effects
 			(font
 				(size 1.5 1.5)
